@@ -24,8 +24,9 @@
           <ion-button
             fill="outline"
             slot="end"
-            >Ver</ion-button
-          >
+            @click="openWebpage('https://github.com/joseluisgs')"
+            >Ver
+          </ion-button>
         </ion-item>
       </ion-card>
     </ion-content>
@@ -76,8 +77,9 @@ export default {
       };
 
       // Opening a URL and returning an InAppBrowserObject
-      const browser = InAppBrowser.create(url, '_self', options);
+      InAppBrowser.create(url, '_self', options);
     }
+
     return {
       logoGithub,
       openWebpage,
