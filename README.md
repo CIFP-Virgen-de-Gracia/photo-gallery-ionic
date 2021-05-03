@@ -10,6 +10,7 @@ Aplicación multiplataforma realizada con Vue.js e Ionic. Manejo de cámara y el
 
 - [Photo Gallery Ionic](#photo-gallery-ionic)
   - [Sobre el proyecto](#sobre-el-proyecto)
+  - [Ejecución](#ejecución)
   - [Autor](#autor)
     - [Contacto](#contacto)
   - [Licencia](#licencia)
@@ -22,6 +23,18 @@ Se ha realizado una aplicación multiplataforma usando Vue.js e Ionic. Además, 
 ![img](./images/img02.png)
 ![img](./images/img03.png)
 ![img](./images/img04.png)
+
+## Ejecución
+- Ejecución Desarrollo: ionic serve
+- Creación de Ejecutable: ionic build
+- Electron: npx cap open @capacitor-community/electron
+- Crear ejecutable nativo de Electron: En la carpeta electron, leer su package.json
+- Añadir una plataforma, como android (ya está): ionic cap add android
+- Copiar a la nueva plataforma: ionic build & ionic cap copy
+- Sincronizar con la plataforma: ionic cap sync
+- Abrir Android Studio o ItellIJ: ionic cap open android
+- Abrir Android en modo live serve, desarrollo: ionic cap run android -l --external
+
 
 ## Autor
 
